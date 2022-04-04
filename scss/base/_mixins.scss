@@ -1,0 +1,12 @@
+@mixin text-center {
+    text-align: center;
+    line-height: 2rem;
+    letter-spacing: 1px;}
+
+
+@mixin text-justify{
+    text-align: justify;
+    font-size: 16px;
+    line-height: 2rem;
+    color: black;
+}

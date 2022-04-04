@@ -1,0 +1,40 @@
+/* --NOTICIAS-- */
+
+/* --Título-- */
+.top-text{   
+    margin: 5%;
+    color: $texto-color;
+    font-size: map-get($font-size, "Big" );
+    @extend %typo }
+
+.news-title{
+    margin: 5%;
+    color: nth($bg-color , 4);
+    font-size: map-get($font-size, "Bigger");
+    @include text-center;
+    font-weight: 1000;
+    line-height: 3rem; }
+
+.news-foot{
+    margin: 5%;
+    color: nth($bg-color , 4);
+    font-size: map-get($font-size, "medium");
+    @include text-justify; }   
+
+/* --Imagen noticia-- */
+.news-img {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 50%;}
+
+/* --Texto noticia-- */    
+.news-text{
+    margin: 5%;
+    color: nth($bg-color , 4);
+    font-size: map-get($font-size, "medium");
+    @include text-justify;}
+    
+/* --Botón atrás-- */  
+.container-button{
+     margin-bottom: 5%;}

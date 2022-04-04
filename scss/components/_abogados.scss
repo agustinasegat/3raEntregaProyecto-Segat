@@ -1,0 +1,61 @@
+/* --ABOGADOS-- */
+
+/* --Hero- */
+.hero-abogados{
+    background-image: url("../images/abogados.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 30rem;}
+
+.hero-text{
+    color: $texto-blanco;
+    @include text-center}
+
+
+/* --Main- */
+.main-abogados{
+    margin:5%}
+
+/* --Imágenes-- */
+.container-card {
+    position: relative;
+    width: 75%;
+    margin: 5%; }
+  
+.container-card .content {
+    position: absolute;
+    bottom: 0; 
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5); 
+    color: $texto-blanco;
+    width: 100%;
+    padding: 5px;
+    @include text-center}
+
+/* --Filtro y Hover img-- */
+ .img-filter{
+    filter: grayscale(100%);      
+    &:hover{
+        filter: none;}
+    }      
+
+
+/* --Botón de Selección de Archivo en Section-- */
+.file-select::before {
+    background-color: nth($bg-color, 2);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    content: 'Seleccionar';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;}    
+ 
+    .file-select {
+    position: relative;
+    display: inline-block;}

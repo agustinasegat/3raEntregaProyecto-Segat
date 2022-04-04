@@ -1,0 +1,34 @@
+/* --SERVICIOS--*/
+
+/* --Hero- */
+.hero-servicios{
+    background-image: url("../images/servicios.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 30rem}
+
+.hero-text{
+    color: $texto-blanco;
+    @include text-center}
+
+
+  /* --Lista de Servicios- */
+
+  .summary {
+    display: block;
+    cursor: pointer;
+    padding: 2%;
+    font-size: map-get($font-size, "medium");
+    margin: 2%;
+    color: nth($bg-color, 2);
+    background-color: nth($bg-color, 3);
+    letter-spacing: 0.5em;
+    border: 2px solid nth($bg-color, 2);}   
+      
+    .details-text{
+      padding: 2%;
+      user-select: none;
+      @include text-center;
+      color: nth($bg-color, 4)}
+  

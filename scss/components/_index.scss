@@ -1,0 +1,90 @@
+/* --INDEX-- */
+
+/* --background */
+.background-index{
+background-image: url("../images/bulb.jpg");
+background-repeat: no-repeat; 
+background-size: cover;
+background-attachment: fixed;}
+
+
+/* --Texto sobre el Estudio */
+.main-text{
+  color: $texto-blanco;
+  @include text-center;
+  font-size: map-get($font-size, "big");
+  margin: 10%}
+
+ /* --Botón de Contacto-- */
+.button-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+ .main-button {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: $texto-blanco;
+  z-index: 1;
+  background: nth($bg-color, 2);
+  position: relative;
+  @extend %typo;
+  font-size: map-get($font-size, "medium");
+  transition: all 250ms;
+  overflow: hidden;
+  &:hover {
+    color: $texto-color}}
+ 
+ .main-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: nth($bg-color, 3);
+  z-index: -1;
+  transition: all 250ms}
+ 
+ .main-button:hover::before {
+  width: 100%;}
+
+/* --Section-Cajas-- */
+.section-boxes{
+  margin: 10% 0 10% 0}
+
+.row-modified{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x))}  
+
+/* --Formato Cajas-- */
+.box{
+  background-color: nth($bg-color, 2);
+  padding: 2%;
+  margin: 3%;
+  border-radius: 30px}
+
+/* --Iconos Cajas-- */
+.box-icons-flex{
+  @extend %column;
+  margin: 2%}
+
+.box-icon{
+  color: $texto-blanco;
+  font-size: 48px;
+  text-align: center}
+
+/* --Texto Cajas-- */
+.box-text{
+  @include text-center;
+  color: $texto-blanco;
+  font-size: 15px}
+

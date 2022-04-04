@@ -1,0 +1,23 @@
+/* --DATOS DE LOS MIEMBROS DEL STAFF-- */
+
+.row-mod{
+    @extend %row }
+    
+.staff-title{
+    @include text-center;
+    color: nth ($bg-color, 4);
+    font-size: map-get($font-size, "bigger");
+    @extend %typo }
+
+.staff-text{
+    @include text-justify;}
+
+/* -Botón atrás- */
+.back-button{
+    align-items: center;
+    font-size: 48px;
+    align-items: center;
+    color: nth($bg-color , 2);}
+
+
+

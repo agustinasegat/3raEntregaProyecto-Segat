@@ -1,0 +1,39 @@
+/* --CONTACTO-- */
+
+.hero-contacto{
+    background-image: url("../images/contacto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 30rem;}
+  
+  .hero-text{
+    color: $texto-blanco;
+    @include text-center}
+
+/* --formulario- */
+.main-contacto{
+    margin: 5%;}
+
+form {
+    max-width: 100%;
+    text-align: center;
+    background-color: nth($bg-color, 3);}
+
+input, textarea {
+    border:0; outline:0;
+    padding: 2rem;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    resize: none;}
+
+.input-submit {
+    color: $texto-blanco; 
+    background-color:nth($bg-color, 2);
+    cursor: pointer;}
+
+textarea {
+     height: 200px;}
+
+         

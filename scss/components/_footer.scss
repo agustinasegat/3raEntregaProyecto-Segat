@@ -1,0 +1,16 @@
+/* --FOOTER-- */
+
+.bg-footer{
+    background-color: nth($bg-color, 1);
+    color: $texto-blanco;
+    font-size: map-get($font-size, "medium");}
+  
+    .text-link{
+      text-decoration: none;
+      color: $texto-blanco;
+      &:hover{
+        color: nth($bg-color, 2)}}
+  
+    .copy{
+      text-align: center;
+      font-size: map-get($font-size, "small")}
