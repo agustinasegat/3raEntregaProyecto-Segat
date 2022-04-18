@@ -26,7 +26,7 @@
 
 /* --Lista de Servicios- */
 .main-servicios{
-  margin: 5%;
+  margin: 5% 5% 10% 5%;
   .service-box{
     @extend %column;
     @include text-justify;

@@ -358,7 +358,7 @@
 
 /* --Lista de Servicios- */
 .main-servicios {
-  margin: 5%;
+  margin: 5% 5% 10% 5%;
 }
 .main-servicios .service-box {
   text-align: justify;
@@ -754,7 +754,7 @@ textarea {
 
 .copy {
   text-align: center;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
