@@ -1,11 +1,12 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto+Serif:wght@200&display=swap");
-.top-text, .staff-title, .main-button, .nav-link-mod, .navbar-brand-mod {
-  font-weight: 500;
-  letter-spacing: 0.2rem;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto+Serif:wght@200&display=swap");
+.top-text {
+  font-weight: 700;
+  letter-spacing: 0.3rem;
 }
 
-.box-icons-flex {
+.service-contact .service-contact-container, .main-servicios .service-box, .box-icons-flex {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,106 +30,147 @@
 /* --FUENTE-- */
 .container-body {
   font-family: "Poppins", sans-serif;
+  word-wrap: break-word;
 }
 
 /* --HEADER- */
 /* --navbar- */
 /* --Color del Nav--*/
 .nav-bg {
-  background-color: #736E70;
-}
-
-/*--Logo--*/
-.navbar-brand-mod {
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  color: whitesmoke;
-  text-decoration: none;
-  white-space: nowrap;
-}
-.navbar-brand-mod:hover {
-  background-color: #BF8173;
-  color: #262626;
+  background-color: #d1d1d1;
+  box-shadow: 10px 2px 10px 10px #243242;
 }
 
 /*--Items Nav--*/
 .nav-link-mod {
   text-decoration: none;
   display: block;
-  padding: 0.5rem 1rem;
-  color: whitesmoke;
+  padding: 0.4rem 0.8rem;
+  color: #154776;
+  letter-spacing: 0.2rem;
+  font-size: 16px;
   text-decoration: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 .nav-link-mod:hover {
-  background-color: #BF8173;
-  color: #262626;
+  background-color: #2E6FF2;
+  color: #F2F2F2;
 }
 
-/*--Hero--*/
-.hero {
-  background-image: url("../background/whitediamond.png");
-  background-attachment: fixed;
+/*--Logo--*/
+.navbar-brand-mod {
+  text-decoration: none;
+  display: block;
+  padding: 0.4rem 0.8rem;
+  color: #154776;
+  letter-spacing: 0.2rem;
+  font-size: 16px;
+  text-decoration: none;
+}
+.navbar-brand-mod:hover {
+  background-color: #2E6FF2;
+  color: #F2F2F2;
 }
 
-/* --INDEX-- */
-/* --background */
-.background-index {
-  background-image: url("../images/bulb.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+/*--Link activo--*/
+.link-active {
+  color: #2E6FF2;
 }
 
-/* --Texto sobre el Estudio */
-.main-text {
-  color: whitesmoke;
+/* --Head- */
+.border-blue {
+  border: 4px double #2E6FF2;
+  margin: 15%;
+}
+
+.head-title {
+  color: #F2F2F2;
   text-align: center;
   line-height: 2rem;
   letter-spacing: 1px;
-  font-size: 22px;
-  margin: 10%;
+  font-size: 36x;
+  margin-top: 5%;
 }
 
-/* --Botón de Contacto-- */
-.button-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.main-button {
-  padding: 15px 25px;
-  border: unset;
-  border-radius: 15px;
-  color: whitesmoke;
-  z-index: 1;
-  background: #BF8173;
-  position: relative;
+.head-text {
+  color: #F2F2F2;
+  text-align: center;
+  line-height: 2rem;
+  letter-spacing: 1px;
   font-size: 16px;
-  transition: all 250ms;
-  overflow: hidden;
-}
-.main-button:hover {
-  color: #BF8173;
+  margin: 5%;
 }
 
-.main-button::before {
+/* --INDEX-- */
+/* --Imagen Header--*/
+.header-index {
+  background-image: linear-gradient(rgba(29, 37, 80, 0.8), #120e25), url("../images/ciudad.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 50rem;
+}
+
+/* --Texto Header--*/
+.hero-text {
+  color: #F2F2F2;
+  text-align: center;
+}
+
+.hero-h {
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  font-size: 36x;
+  margin-top: 20%;
+}
+
+.hero-text {
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  font-size: 26px;
+}
+
+/* --Main--*/
+.main-index {
+  margin: 10% 5% 10% 5%;
+}
+
+/* --Texto El Estudio y texto Global--*/
+.estudio {
+  margin-bottom: 5%;
+}
+
+.main-title {
+  color: #154776;
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  font-size: 22px;
+}
+
+.main-text {
+  color: #154776;
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  font-size: 16px;
+}
+
+.line {
+  display: inline-block;
+  position: relative;
+  margin: 5% 0 10% 0;
+}
+
+.line::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0;
-  border-radius: 15px;
-  background-color: whitesmoke;
-  z-index: -1;
-  transition: all 250ms;
+  width: 60px;
+  height: 4px;
+  background-color: #2E6FF2;
 }
 
-.main-button:hover::before {
-  width: 100%;
+.line::before {
+  bottom: -20px;
 }
 
 /* --Section-Cajas-- */
@@ -149,182 +191,235 @@
 
 /* --Formato Cajas-- */
 .box {
-  background-color: #BF8173;
+  border: 2px solid #F2F2F2;
   padding: 2%;
   margin: 3%;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
-/* --Iconos Cajas-- */
+/*--Iconos Cajas--*/
 .box-icons-flex {
-  margin: 2%;
+  margin: 3%;
 }
 
 .box-icon {
-  color: whitesmoke;
+  color: #154776;
   font-size: 48px;
+  margin-bottom: 10%;
   text-align: center;
 }
 
-/* --Texto Cajas-- */
+/*--Texto Cajas--*/
 .box-text {
   text-align: center;
   line-height: 2rem;
   letter-spacing: 1px;
-  color: whitesmoke;
-  font-size: 15px;
+  color: #154776;
+  font-size: 16px;
 }
 
-/* --ABOGADOS-- */
-/* --Hero- */
-.hero-abogados {
-  background-image: url("../images/abogados.jpg");
+/* --Texto Qué nos diferencia-- */
+.section-different {
+  background-image: linear-gradient(rgba(29, 37, 80, 0.8), #120e25), url("../images/novedades.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 30rem;
+  padding: 5%;
+  margin-bottom: 10%;
 }
 
-.hero-text {
-  color: whitesmoke;
-  text-align: center;
-  line-height: 2rem;
+.title-different {
+  color: #F2F2F2;
+  text-align: justify;
   letter-spacing: 1px;
+  line-height: 2rem;
+  margin-bottom: 3%;
 }
 
-/* --Main- */
+.text-different {
+  color: #F2F2F2;
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+
+/* --ABOGADOS-- */
+/* --Img-Header- */
+.header-abogados {
+  box-shadow: 2px 2px 2px 2px #1d2550;
+  background-image: linear-gradient(rgba(29, 37, 80, 0.8), #120e25), url("../images/equipo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 40rem;
+}
+
+/* --Imágenes y textos de abogados-- */
 .main-abogados {
   margin: 5%;
 }
 
-/* --Imágenes-- */
-.container-card {
-  position: relative;
-  width: 75%;
+.staff {
   margin: 5%;
 }
 
-.container-card .content {
-  position: absolute;
-  bottom: 0;
-  background: black;
-  background: rgba(0, 0, 0, 0.5);
-  color: whitesmoke;
-  width: 100%;
-  padding: 5px;
-  text-align: center;
-  line-height: 2rem;
-  letter-spacing: 1px;
-}
-
-/* --Filtro y Hover img-- */
-.img-filter {
-  filter: grayscale(100%);
-}
-.img-filter:hover {
-  filter: none;
-}
-
-/* --Botón de Selección de Archivo en Section-- */
-.file-select::before {
-  background-color: #BF8173;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 3px;
-  content: "Seleccionar";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
-
-.file-select {
-  position: relative;
-  display: inline-block;
-}
-
-/* --DATOS DE LOS MIEMBROS DEL STAFF-- */
 .staff-title {
   text-align: center;
   line-height: 2rem;
   letter-spacing: 1px;
-  color: nth #736E70, #BF8173, whitesmoke, #262626, #D9C7C1, #A6918D, 4;
-  font-size: 26px;
+  color: #154776;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 2%;
 }
 
 .staff-text {
+  margin-top: 5%;
   text-align: justify;
-  font-size: 16px;
+  letter-spacing: 1px;
   line-height: 2rem;
-  color: black;
+  color: #154776;
+  font-size: 16px;
 }
 
-/* -Botón atrás- */
-.back-button {
-  align-items: center;
-  font-size: 48px;
-  align-items: center;
-  color: #BF8173;
+/* --Envío CV-- */
+.mail-title {
+  color: #F2F2F2;
+  text-align: center;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.mail-text {
+  color: #F2F2F2;
+  text-align: center;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.section-CV {
+  background-image: radial-gradient(#120e25, rgba(29, 37, 80, 0.8)), url("../images/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 5%;
+}
+
+.form-CV {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.btn-color {
+  background-color: #2E6FF2;
+  color: #F2F2F2;
+}
+.btn-color:hover {
+  transform: scale(1.3);
+  all: 2s;
 }
 
 /* --SERVICIOS--*/
-/* --Hero- */
-.hero-servicios {
-  background-image: url("../images/servicios.jpg");
-  background-repeat: no-repeat;
+/* --Header Img- */
+.header-servicios {
+  box-shadow: 2px 2px 2px 2px #1d2550;
+  background-image: linear-gradient(rgba(29, 37, 80, 0.8), #120e25), url("../images/servicios.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 30rem;
+  height: 40rem;
 }
 
-.hero-text {
-  color: whitesmoke;
-  text-align: center;
-  line-height: 2rem;
+/* --Enfoque multidisciplinario- */
+.service-section {
+  margin: 5%;
+}
+
+.enfoque-title {
+  color: #154776;
+  text-align: justify;
   letter-spacing: 1px;
+  line-height: 2rem;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.enfoque-text {
+  color: #154776;
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  font-size: 16px;
 }
 
 /* --Lista de Servicios- */
-.summary {
-  display: block;
-  cursor: pointer;
-  padding: 2%;
-  font-size: 16px;
-  margin: 2%;
-  color: #BF8173;
-  background-color: whitesmoke;
-  letter-spacing: 0.5em;
-  border: 2px solid #BF8173;
+.main-servicios {
+  margin: 5%;
 }
-
-.details-text {
-  padding: 2%;
-  user-select: none;
-  text-align: center;
-  line-height: 2rem;
+.main-servicios .service-box {
+  text-align: justify;
   letter-spacing: 1px;
-  color: #262626;
+  line-height: 2rem;
+  color: #154776;
+  padding: 4%;
+  box-shadow: 10px 10px 10px 10px #F2F2F2;
+  height: 400px;
+  margin: 5%;
+}
+.main-servicios .service-box .service-icon {
+  font-size: 26px;
+}
+.main-servicios .service-box .service-icon .service-title {
+  font-size: 22px;
+}
+.main-servicios .service-box .service-icon .service-title .service-text {
+  font-size: 16px;
+  margin: 5%;
 }
 
-/* --NOVEDADES- */
-/* --Hero- */
-.hero-novedades {
-  background-image: url("../images/novedades.jpg");
+/* --Servicios- Contáctenos-- */
+.service-contact {
+  background-image: linear-gradient(rgba(29, 37, 80, 0.8), #120e25), url("../images/contacto.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  filter: opacity(100%);
-  height: 30rem;
+  padding: 5%;
+  margin-bottom: 5%;
 }
-
-.hero-text {
-  color: whitesmoke;
+.service-contact .service-contact-container {
+  margin: 2%;
+}
+.service-contact .service-contact-container .service-contact-text {
+  color: #F2F2F2;
   text-align: center;
   line-height: 2rem;
   letter-spacing: 1px;
+  font-size: 22px;
+}
+
+/* --Servicios- Contáctenos Botón-- */
+.service-contact-icon {
+  color: #2E6FF2;
+  font-size: 80px;
+}
+.service-contact-icon:hover {
+  transform: scale(1.3);
+  all: 2s;
+}
+
+/* --NOVEDADES- */
+/* --Img-Header- */
+.header-novedades {
+  box-shadow: 2px 2px 2px 2px #1d2550;
+  background-image: linear-gradient(rgba(29, 37, 80, 0.8), #120e25), url("../images/libros.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 40rem;
 }
 
 /* --Main- */
@@ -332,10 +427,77 @@
   margin: 10%;
 }
 
-/* --imagen de la tarjeta- */
-.img-card {
+.img-size {
+  max-height: 80%;
   width: 100%;
-  height: 70%;
+}
+
+/* --tarjetas de noticias-- */
+.card-style {
+  box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 2%;
+  max-height: 100%;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+/* --Hover tarjeta de noticias--*/
+.card-style:hover {
+  box-shadow: 0 28px 36px 0 rgba(0, 0, 0, 0.2);
+  filter: grayscale(100%);
+}
+
+/* --Texto tarjeta de noticias--*/
+.card-top {
+  font-size: 16px;
+  color: #2E6FF2;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  background-color: #d1d1d1;
+  margin: 2% 0 5% 0;
+}
+
+.card-title {
+  font-size: 22px;
+  text-align: center;
+  color: #154776;
+  font-weight: 600;
+  line-height: 2rem;
+  letter-spacing: 0.2rem;
+  margin: 5%;
+}
+
+/*--Section envío NL-- */
+.section-NL {
+  background-image: radial-gradient(#120e25, rgba(29, 37, 80, 0.8)), url("../images/newsletter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*--Texto section NL-- */
+.nl-article {
+  margin: 10% 10% 5% 10%;
+}
+
+.nl-title {
+  color: #F2F2F2;
+  text-align: center;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.nl-text {
+  color: #F2F2F2;
+  text-align: center;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 /*--botón envío mail- */
@@ -346,125 +508,248 @@
 }
 
 .form-control {
-  max-width: 50%;
+  max-width: 300px;
 }
 
 .btn-color {
-  background-color: #BF8173;
-  color: whitesmoke;
+  background-color: #2E6FF2;
+  color: #F2F2F2;
 }
 
 /* --NOTICIAS-- */
-/* --Título-- */
+/* --Texto arriba-- */
 .top-text {
   margin: 5%;
-  color: #BF8173;
+  color: #2E6FF2;
+  margin: 5%;
 }
 
+/* --Título noticia-- */
 .news-title {
-  margin: 5%;
-  color: #262626;
+  color: #120e25;
   text-align: center;
   line-height: 2rem;
   letter-spacing: 1px;
   font-weight: 1000;
   line-height: 3rem;
+  margin: 5%;
 }
 
+/* --Copete-- */
 .news-foot {
   margin: 5%;
-  color: #262626;
+  color: #1d2550;
   font-size: 16px;
   text-align: justify;
-  font-size: 16px;
+  letter-spacing: 1px;
   line-height: 2rem;
-  color: black;
+}
+
+/* Botón compartir */
+.share {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 5%;
+}
+
+.share-btn {
+  --btn-color: #275efe;
+  position: relative;
+  padding: 16px 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  color: #F2F2F2;
+  background: none;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.share-btn::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: var(--btn-color);
+  border-radius: 24px;
+  transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.share-btn span,
+.share-btn span span {
+  display: inline-flex;
+  vertical-align: middle;
+  transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.share-btn span {
+  transition-delay: 0.05s;
+}
+
+.share-btn span:first-child {
+  padding-right: 7px;
+}
+
+.share-btn span span {
+  margin-left: 8px;
+  transition-delay: 0.1s;
+}
+
+.share-btn ul {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  transform: translateY(-50%);
+}
+
+.share-btn ul li {
+  flex: 1;
+}
+
+.share-btn ul li a {
+  display: inline-flex;
+  vertical-align: middle;
+  transform: translateY(55px);
+  transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.share.btn:hover::before {
+  transform: scale(1.2);
+}
+
+.share-btn:hover span,
+.share-btn:hover span span {
+  transform: translateY(-55px);
+}
+
+.share-btn:hover ul li a {
+  transform: translateY(0);
+}
+
+.share-btn:hover ul li:nth-child(1) a {
+  transition-delay: 0.15s;
+}
+
+.share-btn:hover ul li:nth-child(2) a {
+  transition-delay: 0.2s;
+}
+
+.share-btn:hover ul li:nth-child(3) a {
+  transition-delay: 0.25s;
+}
+
+.share-icon {
+  color: #F2F2F2;
+}
+
+/* --Texto noticia-- */
+.news-text {
+  margin: 5%;
+  color: #120e25;
+  font-size: 16px;
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 2rem;
 }
 
 /* --Imagen noticia-- */
 .news-img {
   display: block;
   margin: auto;
-  width: 80%;
-  height: 50%;
-}
-
-/* --Texto noticia-- */
-.news-text {
-  margin: 5%;
-  color: #262626;
-  font-size: 16px;
-  text-align: justify;
-  font-size: 16px;
-  line-height: 2rem;
-  color: black;
+  width: 90%;
+  height: 30%;
 }
 
 /* --Botón atrás-- */
-.container-button {
-  margin-bottom: 5%;
+.back-button {
+  font-size: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10%;
 }
 
 /* --CONTACTO-- */
-.hero-contacto {
-  background-image: url("../images/contacto.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+.container-body-contact {
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/email-pattern.png");
   background-attachment: fixed;
-  height: 30rem;
+  font-family: "Poppins", sans-serif;
 }
 
-.hero-text {
-  color: whitesmoke;
-  text-align: center;
-  line-height: 2rem;
-  letter-spacing: 1px;
-}
-
-/* --formulario- */
 .main-contacto {
   margin: 5%;
 }
 
-form {
-  max-width: 100%;
+/* --Formulario- */
+.contact-text {
+  color: #154776;
+  font-size: 26px;
   text-align: center;
-  background-color: whitesmoke;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.form-h1 {
+  color: #154776;
+  font-size: 22px;
+  text-align: center;
 }
 
 input, textarea {
   border: 0;
   outline: 0;
-  padding: 2rem;
+  padding: 1rem;
   display: block;
   width: 100%;
   margin-top: 1em;
   resize: none;
-}
-
-.input-submit {
-  color: whitesmoke;
-  background-color: #BF8173;
-  cursor: pointer;
+  border-radius: 15px;
 }
 
 textarea {
   height: 200px;
 }
 
+.contact-button {
+  font-size: 22px;
+  color: #F2F2F2;
+  letter-spacing: 0.2rem;
+  border-radius: 15px;
+  background-color: #2E6FF2;
+  max-width: auto;
+  cursor: pointer;
+}
+.contact-button:hover {
+  background-color: #d1d1d1;
+  transform: scale(1.05);
+}
+
 /* --FOOTER-- */
 .bg-footer {
-  background-color: #736E70;
-  color: whitesmoke;
+  background-color: #d1d1d1;
+  color: #154776;
   font-size: 16px;
 }
 
 .text-link {
   text-decoration: none;
-  color: whitesmoke;
+  color: #154776;
 }
 .text-link:hover {
-  color: #BF8173;
+  color: #2E6FF2;
 }
 
 .copy {

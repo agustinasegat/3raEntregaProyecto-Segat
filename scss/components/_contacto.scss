@@ -1,39 +1,50 @@
 /* --CONTACTO-- */
-
-.hero-contacto{
-    background-image: url("../images/contacto.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto+Serif:wght@200&display=swap');
+   
+.container-body-contact{
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/email-pattern.png");
     background-attachment: fixed;
-    height: 30rem;}
-  
-  .hero-text{
-    color: $texto-blanco;
-    @include text-center}
+    font-family: 'Poppins', sans-serif;}
 
-/* --formulario- */
 .main-contacto{
     margin: 5%;}
 
-form {
-    max-width: 100%;
-    text-align: center;
-    background-color: nth($bg-color, 3);}
+/* --Formulario- */
+
+.contact-text{
+    color: $texto-color;
+    font-size: map-get($font-size, "bigger" );
+    @include text-center;
+    font-weight: bold;}
+
+.form-h1{ 
+    color: $texto-color;
+    font-size: map-get($font-size, "big");
+    text-align: center;}
 
 input, textarea {
-    border:0; outline:0;
-    padding: 2rem;
+    border:0; 
+    outline:0;
+    padding: 1rem;
     display: block;
     width: 100%;
     margin-top: 1em;
-    resize: none;}
-
-.input-submit {
-    color: $texto-blanco; 
-    background-color:nth($bg-color, 2);
-    cursor: pointer;}
+    resize: none;
+    border-radius: 15px;}
 
 textarea {
      height: 200px;}
+
+.contact-button{
+    font-size: map-get($font-size, "big" );
+    color: $texto-blanco;
+    letter-spacing: 0.2rem;
+    border-radius: 15px;
+    background-color: nth($bg-color, 2 );
+    max-width: auto;
+    cursor: pointer;
+    &:hover{
+        background-color: nth($bg-color, 3);
+       transform: scale(1.05); }}
 
          

@@ -17,117 +17,142 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>ABOGADOS</title>
-</head>
+</head>   
 <body class="container-body">
-<header>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-md navbar-light nav-bg">
-    <div class="container-fluid">
-      <a class="navbar-brand-mod" href="../index.html">SOLUCIONES LEGALES</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link-mod" href="../index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link-mod" href="abogados.html">Abogados</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link-mod" href="#">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link-mod" href="novedades.html">Novedades</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link-mod" href="contacto.html">Contacto</a>
-          </li>
-        </ul>
+  <header class="header-servicios">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light nav-bg">
+      <div class="container-fluid">
+        <a class="navbar-brand-mod" href="../index.html">SOLUCIONES LEGALES</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link-mod" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link-mod" href="abogados.html">Abogados</a></li>
+            <li class="nav-item"><a class="nav-link-mod link-active" href="#">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link-mod" href="novedades.html">Novedades</a></li>
+            <li class="nav-item"><a class="nav-link-mod" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="head">
+      <div class="container-fluid">
+        <article class="border-blue">
+          <h1 class="head-title">SERVICIOS</h1>
+          <p class="head-text">Prestamos una amplia gama de servicios de acuerdo a las necesidades de cada cliente</p>
+        </article>
+      </div>
+    </section>
+  </header>
+  <section class="service-section">
+    <div data-aos="zoom-in">
+      <div class="container-fluid">
+        <div class="row d-flex align-items-center">
+          <!-- Imagen-->
+          <div class="col-md-6">
+            <img src="../images/handshake.jpg"class= "img-fluid" alt="apretón de manos">
+          </div>
+          <!-- Texto-->
+          <div class="col-md-6">
+            <h2 class="enfoque-title line">ENFOQUE MULTIDISCIPLINARIO</h2>
+            <p class="enfoque-text">Nuestro enfoque multidisciplinario y centrado en el sector les ofrece una asesoría integrada y detallada en el que pueden confiar. <br> A lo largo de todo el servicio, nos tomamos el tiempo necesario para entender claramente lo que es importante para ustedes. Con equipos internacionales gestionados de forma centralizada y contactos en un solo país responsable, nuestros servicios controlados y eficientes pueden ayudar a sus empresas en todo el mundo.</p>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
-  <!-- Hero-->
-<section class="hero-servicios">
-  <div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-flex-end g-5 py-5">
-      <div class="col-lg-6">
-        <h1 class="hero-text">Servicios</h1>
-        <p class="hero-text">Prestamos una amplia gama de servicios de acuerdo a las necesidades de cada cliente</p>
+  </section>
+<!-- Main Servicios-->
+  <main class="main-servicios">
+    <div data-aos="zoom-in">
+      <div class="container">
+        <div class="row">
+          <!-- Contencioso-->
+          <div class="col-md-6">
+            <div class="service-box">
+              <i class="fa-solid fa-scale-balanced service-icon"></i>
+              <h2 class="service-title line">Asuntos Contenciosos</h2>
+              <p class="service-text"> Asesoramiento en cuestiones contenciosas que van desde gestiones de cobro y ejecuciones de contenido patrimonial, hasta el tratamiento de litigios con alto grado de complejidad.</p>
+            </div>
+          </div>
+          <!-- Contratos-->
+          <div class="col-md-6">
+            <div class="service-box">
+              <i class="fa-solid fa-file-signature service-icon"></i>
+              <h2 class="service-title line">Derecho Contractual</h2>
+              <p class="service-text">Nuestros profesionales se especializan en la redacción de documentos contractuales civiles y comerciales, así como el asesoramiento integral en negociaciones precontractuales.</p>
+            </div>
+          </div>
+          <!-- Laboral-->
+          <div class="col-md-6">
+            <div class="service-box">
+              <i class="fa-solid fa-person-digging service-icon"></i>
+              <h2 class="service-title line">Derecho del Trabajo</h2>
+              <p class="service-text"> Asesoramiento en procesos de contratación, terminaciones, auditoría y consultoría legal, subcontrataciones, recursos humanos, higiene y seguridad, riesgos del trabajo, y asuntos de seguridad social.</p>
+            </div>
+          </div>
+          <!-- Consumidor-->
+          <div class="col-md-6">
+            <div class="service-box">
+              <i class="fa-solid fa-cart-shopping service-icon"></i>
+              <h2 class="service-title line">Derecho del Consumo</h2>
+              <p class="service-text">Asesoramiento judicial y extrajudicial en materia de responsabilidad frente al consumidor, asesoramiento en materia de publicidad y etiquetados, asistencia en audiencias ante la Secretaría de Defensa del Consumidor y en sede judicial.</p>
+            </div>
+          </div>
+          <!-- Informático-->
+          <div class="col-md-6">
+            <div class="service-box">
+              <i class="fa-solid fa-desktop service-icon"></i>
+              <h2 class="service-title line">Derecho Informático</h2>
+              <p class="service-text">Nuestros profesionales representan a sus clientes ante todos los niveles administrativos del Estado, asesorando especialmente empresas en materia de contratos informáticos, software y seguridad informática.</p>
+            </div>
+          </div>
+          <!--Corporativo-->
+          <div class="col-md-6">
+            <div class="service-box">
+              <i class="fa-solid fa-building service-icon"></i>
+              <h2 class="service-title line">Derecho Corporativo</h2>
+              <p class="service-text">Asesoramiento en materia societaria a empresas nacionales y extranjeras: constituciones, inscripciones en el Registro Público de Comercio, fusiones, adquisiciones, uniones transitorias de empresas y agrupaciones de colaboración empresaria, entre otras.</p>
+            </div>
+          </div>
+          <!--Tributario-->
+          <div class="col-md-6">
+            <div class="service-box">
+              <i class="fa-solid fa-calculator service-icon"></i>
+              <h2 class="service-title line">Derecho Tributario</h2>
+              <p class="service-text">El área se encuentra constantemente involucrada en la estructuración de las más complejas transacciones, litigios y planificaciones tributarias y procesos de due diligence, con un enfoque práctico y dirigido a soluciones concretas e integrales.</p>
+            </div>
+          </div>
+          <!--Conciliación-->
+          <div class="col-md-6">
+            <div class="service-box">
+              <i class="fa-solid fa-handshake service-icon"></i>
+              <h2 class="service-title line">Conciliación y Arbitraje</h2>
+              <p class="service-text">El área de arbitrajes brinda una amplia gama de servicios, ya sea en la ejecución de sentencias y laudos arbitrales extranjeros en la Argentina o en la participación en arbitrajes internacionales y nacionales como árbitros, abogados de parte o peritos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+<!-- Contáctenos -->
+<section class="service-contact">
+  <div data-aos="zoom-in">
+    <div class="container-fluid">
+      <div class="service-contact-container">
+        <h2 class="service-contact-text">Si se encuentra interesado en alguno de nuestros servicios, no dude en contactarnos:</h2>
+        <a href="./contacto.html"><i class="fa-solid fa-square-envelope service-contact-icon"></i></a>
       </div>
     </div>
   </div>
 </section>
-</header>
-<!-- Main Servicios-->
-<main class="main-servicios">
-  <div class="container">
-    <div class="row">
-        <div class="col-10">  
-            <details><summary class="summary"><i class="fa-solid fa-scale-balanced"></i>LITIGIOS</summary>
-                <div>
-                    <p class="details-text">Nuestro equipo judicial se adapta a las necesidades de nuestros clientes y brinda asesoramiento en cuestiones contenciosas que van desde gestiones de cobro y simples ejecuciones de contenido patrimonial, hasta el tratamiento de litigios con alto grado de complejidad, en los que la dedicación personal y el conocimiento especializado resultan decisivos.</p>
-                </div>
-            </details>
-          </div>
-        <div class="col-10">  
-            <details><summary class="summary"><i class="fa-solid fa-file-contract"></i>CONTRATOS</summary>
-                <div>
-                   <p class="details-text">Nuestros profesionales se especializan en la redacción de documentos contractuales civiles y comerciales, así como el asesoramiento integral en negociaciones precontractuales.</p>
-                </div>
-            </details>
-        </div>
-        <div class="col-10">  
-            <details ><summary class="summary"><i class="fa-solid fa-person-digging"></i>DERECHO DEL TRABAJO</summary>
-                <div>
-                    <p>Asesoramiento a clientes nacionales e internacionales en sus procesos de contratación, paquetes de compensación (incluso planes de acciones), terminaciones individuales y masivas, labores de auditoría y consultoría legal, subcontrataciones, políticas corporativas, due diligence laborales en compras y adquisiciones, investigaciones internas, recursos humanos, higiene y seguridad, riesgos del trabajo, y asuntos de seguridad social e impuestos a trabajadores</p>
-                </div>
-            </details>
-        </div>
-        <div class="col-10">   
-            <details><summary class="summary"><i class="fa-solid fa-cart-shopping"></i>DERECHO DEL CONSUMO</summary>
-                <div> 
-                  <p class="details-text">Asesoramiento judicial y extrajudicial en materia de responsabilidad frente al consumidor, asesoramiento en materia de publicidad y etiquetados</p>
-                </div>
-              </details>
-          </div>
-          <div class="col-10"> 
-              <details><summary class="summary"><i class="fa-solid fa-display"></i>DERECHO INFORMÁTICO</summary>
-                <div>
-                  <p class="details-text">Nuestros profesionales representan a sus clientes ante todos los niveles administrativos del Estado, asesorando especialmente empresas en materia de contratos informáticos, software y seguridad informática.</p>
-                </div>
-              </details>
-          </div>
-          <div class="col-10"> 
-            <details><summary class="summary"><i class="fa-solid fa-building"></i>DERECHO CORPORATIVO</summary>
-                <div>
-                  <p class="details-text">Asesoramiento en materia societaria a empresas nacionales y extranjeras: constituciones, inscripciones en el Registro Público de Comercio, fusiones, adquisiciones, uniones transitorias de empresas y agrupaciones de colaboración empresaria, entre otras.</p>
-                </div>
-              </details>
-          </div>
-          <div class="col-10"> 
-              <details><summary class="summary"><i class="fa-solid fa-calculator"></i>DERECHO TRIBUTARIO</summary>
-                <div>
-                  <p class="details-text">El área se encuentra constantemente involucrada en la estructuración de las más complejas transacciones, litigios y planificaciones tributarias y procesos de due diligence, con un enfoque práctico y dirigido a soluciones concretas e integrales.</p>
-                </div>
-                </details>
-            </div>
-            <div class="col-10"> 
-              <details><summary class="summary"><i class="fa-solid fa-handshake"></i>CONCILIACIÓN Y ARBITRAJE</summary>
-                  <div> 
-                    <p class="details-text">El área de arbitrajes brinda una amplia gama de servicios, ya sea en la ejecución de sentencias y laudos arbitrales extranjeros en la Argentina o en la participación en arbitrajes internacionales y nacionales como árbitros, abogados de parte o peritos.</p>
-                  </div>
-              </details> 
-            </div>
-        </div>
-     </div>
-</main>
-<!-- Footer -->
-<footer class="text-center text-lg-start bg-footer">
+<!-- Footer-->
+  <footer class="text-center text-lg-start bg-footer">
     <!-- Redes-->
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <div class="me-5 d-none d-lg-block">
+      <div class="me-5 d-none d-lg-block">
         <span>Encuéntrenos en redes sociales</span>
       </div>
       <div>
@@ -141,12 +166,12 @@
     <section>
       <div class="container text-center text-md-start mt-5">
         <div class="row mt-3">
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <div class="col-md-2 col-lg-2">
             <h6 class="text-uppercase fw-bold mb-4">SOLUCIONES LEGALES</h6>
             <p>Especialistas en Derecho Económico & Corporativo</p>
           </div>
           <!-- Mapa del sitio -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">         
+          <div class="col-md-2 col-lg-2">         
             <h6 class="text-uppercase fw-bold mb-4">Mapa del Sitio</h6>
             <p><a href="../index.html" class="text-link">Inicio</a></p>
             <p><a href="abogados.html" class="text-link">Abogados</a></p>
@@ -154,12 +179,12 @@
             <p><a href="novedades.html"  class="text-link">Novedades</a>
             <p><a href="contacto.html"  class="text-link">Contacto</a></p></p>
           </div>
-        <!-- Mapa -->
-         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.041591344355!2d-58.37196168477037!3d-34.60310978045973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3353293a1c695%3A0x86e197364c26e754!2sAv.%20Corrientes%20200%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1648967144112!5m2!1ses-419!2sar" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <!-- Contacto -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">           
+          <!-- Mapa -->
+          <div class="col-md-4 col-lg-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.041591344355!2d-58.37196168477037!3d-34.60310978045973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3353293a1c695%3A0x86e197364c26e754!2sAv.%20Corrientes%20200%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1648967144112!5m2!1ses-419!2sar" width="80%" height="80% style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <!-- Contacto -->
+          <div class="col-md-4 col-lg-4">           
             <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
             <p><i class="fas fa-home me-3"></i>Av. Corrientes 200 Piso 5° C.A.B.A.</p>
             <p><i class="fas fa-envelope me-3"></i>info@solucioneslegales.com</p>
@@ -170,13 +195,14 @@
     </section>
     <!-- Copyright -->
     <p class="copy"> Todos los derechos reservados| 2022</p>
-  </footer>  
-  <!-- Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </footer>
+<!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <!-- AOS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+  </script>
 </body>
 </html>
+  

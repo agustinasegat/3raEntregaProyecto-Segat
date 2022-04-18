@@ -1,90 +1,114 @@
 /* --INDEX-- */
 
-/* --background */
-.background-index{
-background-image: url("../images/bulb.jpg");
-background-repeat: no-repeat; 
-background-size: cover;
-background-attachment: fixed;}
+/* --Imagen Header--*/
+.header-index{
+  background-image: linear-gradient((rgba(29, 37, 80, 0.8)),rgb(18, 14, 37)), url("../images/ciudad.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 50rem;}
 
+/* --Texto Header--*/
+.hero-text{
+  color: $texto-blanco;
+  text-align: center;}
 
-/* --Texto sobre el Estudio */
+.hero-h{
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  font-size: map-get($font-size, "biggest");
+  margin-top: 20%;}
+
+.hero-text{
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  font-size: map-get($font-size, "bigger");}
+
+/* --Main--*/
+.main-index{
+  margin: 10% 5% 10% 5%;}
+
+/* --Texto El Estudio y texto Global--*/
+.estudio {
+  margin-bottom: 5%}
+
+.main-title{
+  color: $texto-color;
+  @include text-justify;
+  font-size: map-get($font-size, "big")}
+
 .main-text{
-  color: $texto-blanco;
-  @include text-center;
-  font-size: map-get($font-size, "big");
-  margin: 10%}
+  color: $texto-color;
+  @include text-justify;
+  font-size: map-get($font-size, "medium");}
 
- /* --Botón de Contacto-- */
-.button-flex{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
- .main-button {
-  padding: 15px 25px;
-  border: unset;
-  border-radius: 15px;
-  color: $texto-blanco;
-  z-index: 1;
-  background: nth($bg-color, 2);
+.line{
+  display: inline-block;
   position: relative;
-  @extend %typo;
-  font-size: map-get($font-size, "medium");
-  transition: all 250ms;
-  overflow: hidden;
-  &:hover {
-    color: $texto-color}}
- 
- .main-button::before {
-  content: "";
+  margin: 5% 0 10% 0}
+  
+.line::before{
+  content:'';
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0;
-  border-radius: 15px;
-  background-color: nth($bg-color, 3);
-  z-index: -1;
-  transition: all 250ms}
- 
- .main-button:hover::before {
-  width: 100%;}
-
+  width: 60px;
+  height: 4px;
+  background-color: nth($bg-color , 2)}
+  
+.line::before{
+  bottom: -20px;}  
+  
 /* --Section-Cajas-- */
 .section-boxes{
   margin: 10% 0 10% 0}
 
 .row-modified{
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-.5 * var(--bs-gutter-x));
-    margin-left: calc(-.5 * var(--bs-gutter-x))}  
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x))}  
 
 /* --Formato Cajas-- */
 .box{
-  background-color: nth($bg-color, 2);
+  border: 2px solid nth($bg-color, 4);
   padding: 2%;
   margin: 3%;
-  border-radius: 30px}
+  border-radius: 10px;}
 
-/* --Iconos Cajas-- */
+/*--Iconos Cajas--*/
 .box-icons-flex{
   @extend %column;
-  margin: 2%}
+  margin: 3%}
 
 .box-icon{
-  color: $texto-blanco;
+  color: $texto-color;
   font-size: 48px;
+  margin-bottom: 10%;
   text-align: center}
 
-/* --Texto Cajas-- */
+/*--Texto Cajas--*/
 .box-text{
   @include text-center;
-  color: $texto-blanco;
-  font-size: 15px}
+  color: $texto-color;
+  font-size: map-get($font-size, "medium")}
 
+/* --Texto Qué nos diferencia-- */
+.section-different{
+  background-image: linear-gradient((rgba(29, 37, 80, 0.8)),rgb(18, 14, 37)), url("../images/novedades.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 5%;
+  margin-bottom: 10%;}
+
+.title-different{
+  color: $texto-blanco;
+  @include text-justify;
+  margin-bottom: 3%;}
+
+.text-different{
+  color: $texto-blanco;
+  @include text-justify}

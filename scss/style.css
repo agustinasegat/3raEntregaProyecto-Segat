@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto+Serif:wght@200&display=swap");
-.navbar-brand-mod, .nav-link-mod, .main-button, .staff-title, .top-text {
+.navbar-brand-mod, .main-button, .staff-title, .top-text {
   font-weight: 500;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.3rem;
 }
 
 .box-icons-flex {
@@ -53,58 +53,74 @@
 /* --navbar- */
 /* --Color del Nav--*/
 .nav-bg {
-  background-color: #736E70;
+  background-color: white;
+  -webkit-box-shadow: 20rem;
+          box-shadow: 20rem;
 }
 
 /*--Logo--*/
 .navbar-brand-mod {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  color: whitesmoke;
+  margin-right: 0.7rem;
+  color: #154776;
   text-decoration: none;
   white-space: nowrap;
 }
 
 .navbar-brand-mod:hover {
-  background-color: #BF8173;
-  color: #262626;
+  background-color: #2E6FF2;
+  color: #F2F2F2;
 }
 
 /*--Items Nav--*/
 .nav-link-mod {
   text-decoration: none;
   display: block;
-  padding: 0.5rem 1rem;
-  color: whitesmoke;
+  padding: 0.4rem 0.8rem;
+  color: #154776;
+  letter-spacing: 0.2rem;
   text-decoration: none;
-  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
 .nav-link-mod:hover {
-  background-color: #BF8173;
-  color: #262626;
-}
-
-/*--Hero--*/
-.hero {
-  background-image: url("../background/whitediamond.png");
-  background-attachment: fixed;
+  background-color: #2E6FF2;
+  color: #F2F2F2;
 }
 
 /* --INDEX-- */
-/* --background */
-.background-index {
-  background-image: url("../images/bulb.jpg");
+/* --Imagen Header--*/
+.header-index {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 37, 80, 0.8)), to(#120e25)), url("../images/ciudad.jpg");
+  background-image: linear-gradient(rgba(29, 37, 80, 0.8), #120e25), url("../images/ciudad.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  height: 50rem;
+}
+
+/* --Texto Header--*/
+.hero-text {
+  color: #F2F2F2;
+  text-align: center;
+}
+
+.hero-h {
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  font-size: 48px;
+  margin-top: 15%;
+}
+
+.hero-text {
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  font-size: 26px;
 }
 
 /* --Texto sobre el Estudio */
 .main-text {
-  color: whitesmoke;
+  color: #F2F2F2;
   text-align: center;
   line-height: 2rem;
   letter-spacing: 1px;
@@ -129,9 +145,9 @@
   padding: 15px 25px;
   border: unset;
   border-radius: 15px;
-  color: whitesmoke;
+  color: #F2F2F2;
   z-index: 1;
-  background: #BF8173;
+  background: #154776;
   position: relative;
   font-size: 16px;
   -webkit-transition: all 250ms;
@@ -140,7 +156,7 @@
 }
 
 .main-button:hover {
-  color: #BF8173;
+  color: #154776;
 }
 
 .main-button::before {
@@ -151,7 +167,7 @@
   height: 100%;
   width: 0;
   border-radius: 15px;
-  background-color: whitesmoke;
+  background-color: #F2F2F2;
   z-index: -1;
   -webkit-transition: all 250ms;
   transition: all 250ms;
@@ -183,7 +199,7 @@
 
 /* --Formato Cajas-- */
 .box {
-  background-color: #BF8173;
+  background-color: #2E6FF2;
   padding: 2%;
   margin: 3%;
   border-radius: 30px;
@@ -195,7 +211,7 @@
 }
 
 .box-icon {
-  color: whitesmoke;
+  color: #F2F2F2;
   font-size: 48px;
   text-align: center;
 }
@@ -205,7 +221,7 @@
   text-align: center;
   line-height: 2rem;
   letter-spacing: 1px;
-  color: whitesmoke;
+  color: #F2F2F2;
   font-size: 15px;
 }
 
@@ -220,7 +236,7 @@
 }
 
 .hero-text {
-  color: whitesmoke;
+  color: #F2F2F2;
   text-align: center;
   line-height: 2rem;
   letter-spacing: 1px;
@@ -243,7 +259,7 @@
   bottom: 0;
   background: black;
   background: rgba(0, 0, 0, 0.5);
-  color: whitesmoke;
+  color: #F2F2F2;
   width: 100%;
   padding: 5px;
   text-align: center;
@@ -264,7 +280,7 @@
 
 /* --Botón de Selección de Archivo en Section-- */
 .file-select::before {
-  background-color: #BF8173;
+  background-color: #2E6FF2;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -289,32 +305,6 @@
   display: inline-block;
 }
 
-/* --DATOS DE LOS MIEMBROS DEL STAFF-- */
-.staff-title {
-  text-align: center;
-  line-height: 2rem;
-  letter-spacing: 1px;
-  color: nth #736E70, #BF8173, whitesmoke, #262626, #D9C7C1, #A6918D, 4;
-  font-size: 26px;
-}
-
-.staff-text {
-  text-align: justify;
-  font-size: 16px;
-  line-height: 2rem;
-  color: black;
-}
-
-/* -Botón atrás- */
-.back-button {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 48px;
-  align-items: center;
-  color: #BF8173;
-}
-
 /* --SERVICIOS--*/
 /* --Hero- */
 .hero-servicios {
@@ -326,7 +316,7 @@
 }
 
 .hero-text {
-  color: whitesmoke;
+  color: #F2F2F2;
   text-align: center;
   line-height: 2rem;
   letter-spacing: 1px;
@@ -339,10 +329,10 @@
   padding: 2%;
   font-size: 16px;
   margin: 2%;
-  color: #BF8173;
-  background-color: whitesmoke;
+  color: #2E6FF2;
+  background-color: #6DB4F2;
   letter-spacing: 0.5em;
-  border: 2px solid #BF8173;
+  border: 2px solid #2E6FF2;
 }
 
 .details-text {
@@ -354,7 +344,7 @@
   text-align: center;
   line-height: 2rem;
   letter-spacing: 1px;
-  color: #262626;
+  color: #F2F2F2;
 }
 
 /* --NOVEDADES- */
@@ -370,7 +360,7 @@
 }
 
 .hero-text {
-  color: whitesmoke;
+  color: #F2F2F2;
   text-align: center;
   line-height: 2rem;
   letter-spacing: 1px;
@@ -405,20 +395,20 @@
 }
 
 .btn-color {
-  background-color: #BF8173;
-  color: whitesmoke;
+  background-color: #2E6FF2;
+  color: #F2F2F2;
 }
 
 /* --NOTICIAS-- */
 /* --Título-- */
 .top-text {
   margin: 5%;
-  color: #BF8173;
+  color: #154776;
 }
 
 .news-title {
   margin: 5%;
-  color: #262626;
+  color: #F2F2F2;
   text-align: center;
   line-height: 2rem;
   letter-spacing: 1px;
@@ -428,7 +418,7 @@
 
 .news-foot {
   margin: 5%;
-  color: #262626;
+  color: #F2F2F2;
   font-size: 16px;
   text-align: justify;
   font-size: 16px;
@@ -447,7 +437,7 @@
 /* --Texto noticia-- */
 .news-text {
   margin: 5%;
-  color: #262626;
+  color: #F2F2F2;
   font-size: 16px;
   text-align: justify;
   font-size: 16px;
@@ -470,7 +460,7 @@
 }
 
 .hero-text {
-  color: whitesmoke;
+  color: #F2F2F2;
   text-align: center;
   line-height: 2rem;
   letter-spacing: 1px;
@@ -484,7 +474,7 @@
 form {
   max-width: 100%;
   text-align: center;
-  background-color: whitesmoke;
+  background-color: #6DB4F2;
 }
 
 input, textarea {
@@ -498,8 +488,8 @@ input, textarea {
 }
 
 .input-submit {
-  color: whitesmoke;
-  background-color: #BF8173;
+  color: #F2F2F2;
+  background-color: #2E6FF2;
   cursor: pointer;
 }
 
@@ -509,18 +499,18 @@ textarea {
 
 /* --FOOTER-- */
 .bg-footer {
-  background-color: #736E70;
-  color: whitesmoke;
+  background-color: #154776;
+  color: #F2F2F2;
   font-size: 16px;
 }
 
 .text-link {
   text-decoration: none;
-  color: whitesmoke;
+  color: #F2F2F2;
 }
 
 .text-link:hover {
-  color: #BF8173;
+  color: #2E6FF2;
 }
 
 .copy {

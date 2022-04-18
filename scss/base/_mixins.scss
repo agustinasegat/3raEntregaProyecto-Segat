@@ -6,7 +6,5 @@
 
 @mixin text-justify{
     text-align: justify;
-    font-size: 16px;
-    line-height: 2rem;
-    color: black;
-}
+    letter-spacing: 1px;
+    line-height: 2rem;}

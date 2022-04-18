@@ -1,40 +1,141 @@
 /* --NOTICIAS-- */
 
-/* --Título-- */
+/* --Texto arriba-- */
 .top-text{   
     margin: 5%;
-    color: $texto-color;
-    font-size: map-get($font-size, "Big" );
-    @extend %typo }
+    color: nth($bg-color, 2);
+    font-size: map-get($font-size, "Big");
+    @extend %typo; 
+    margin: 5%}
 
+
+/* --Título noticia-- */
 .news-title{
-    margin: 5%;
-    color: nth($bg-color , 4);
+    color: nth($bg-color , 5);
     font-size: map-get($font-size, "Bigger");
     @include text-center;
     font-weight: 1000;
-    line-height: 3rem; }
+    line-height: 3rem;
+    margin: 5%;}
 
+/* --Copete-- */
 .news-foot{
     margin: 5%;
-    color: nth($bg-color , 4);
+    color: nth($bg-color , 1);
     font-size: map-get($font-size, "medium");
     @include text-justify; }   
+
+/* Botón compartir */
+.share{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 5%;}
+
+.share-btn {
+    --btn-color: #275efe;
+    position: relative;
+    padding: 16px 32px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    color: $texto-blanco;
+    background: none;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);}
+   
+.share-btn::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: var(--btn-color);
+    border-radius: 24px;
+    transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);}
+   
+.share-btn span,
+.share-btn span span {
+    display: inline-flex;
+    vertical-align: middle;
+    transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);}
+   
+.share-btn span {
+    transition-delay: 0.05s;}
+   
+.share-btn span:first-child {
+    padding-right: 7px;}
+   
+.share-btn span span {
+    margin-left: 8px;
+    transition-delay: 0.1s;}
+   
+.share-btn ul {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    transform: translateY(-50%);}
+   
+.share-btn ul li {
+    flex: 1;}
+   
+.share-btn ul li a {
+    display: inline-flex;
+    vertical-align: middle;
+    transform: translateY(55px);
+    transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);}
+ 
+.share.btn:hover::before {
+    transform: scale(1.2);}
+   
+.share-btn:hover span,
+.share-btn:hover span span {
+    transform: translateY(-55px);}
+   
+.share-btn:hover ul li a {
+    transform: translateY(0);}
+   
+.share-btn:hover ul li:nth-child(1) a {
+    transition-delay: 0.15s;}
+   
+.share-btn:hover ul li:nth-child(2) a {
+    transition-delay: 0.2s; }
+   
+.share-btn:hover ul li:nth-child(3) a {
+    transition-delay: 0.25s;}
+
+.share-icon{
+    color: $texto-blanco}
+
+
+/* --Texto noticia-- */   
+.news-text{
+    margin: 5%;
+    color: nth($bg-color, 5);
+    font-size: map-get($font-size, "medium");
+    @include text-justify;}
 
 /* --Imagen noticia-- */
 .news-img {
     display: block;
     margin: auto;
-    width: 80%;
-    height: 50%;}
-
-/* --Texto noticia-- */    
-.news-text{
-    margin: 5%;
-    color: nth($bg-color , 4);
-    font-size: map-get($font-size, "medium");
-    @include text-justify;}
-    
+    width: 90%;
+    height: 30%;}
+ 
 /* --Botón atrás-- */  
-.container-button{
-     margin-bottom: 5%;}
+.back-button {
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10%;}

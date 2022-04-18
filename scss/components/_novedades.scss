@@ -1,39 +1,88 @@
-
 /* --NOVEDADES- */
 
-
-/* --Hero- */
-.hero-novedades{
-  background-image: url("../images/novedades.jpg");
-  background-repeat: no-repeat;
+/* --Img-Header- */
+.header-novedades{
+  box-shadow: 2px 2px 2px 2px nth($bg-color, 1);
+  background-image: linear-gradient((rgba(29, 37, 80, 0.8)),rgb(18, 14, 37)), url("../images/libros.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  filter: opacity(100%);
-  height: 30rem}
-
-.hero-text{
-  color: $texto-blanco;
-  @include text-center}
+  height: 40rem;}
 
 /* --Main- */
 .main-novedades{
   margin: 10%;}
 
-/* --imagen de la tarjeta- */
-.img-card{
-  width: 100%;
-  height: 70%;}
+.img-size{
+  max-height: 80%;
+  width: 100%;}
+
+/* --tarjetas de noticias-- */
+.card-style {
+  box-shadow: 0 14px 18px 0 rgba(0,0,0,0.2);
+  transition: 0.3s; 
+  padding: 2%;
+  max-height: 100%;}
+
+.card-link{
+text-decoration: none;}
+
+/* --Hover tarjeta de noticias--*/
+.card-style:hover {
+  box-shadow: 0 28px 36px 0 rgba(0,0,0,0.2);
+  filter: grayscale(100%);}
+
+/* --Texto tarjeta de noticias--*/
+.card-top{
+  font-size: map-get($font-size, "medium");
+  color: nth($bg-color, 2);
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  background-color: nth($bg-color, 3);
+  margin: 2% 0 5% 0;}
+
+.card-title{
+  font-size: map-get($font-size, "big");
+  text-align: center;
+  color: $texto-color;
+  font-weight: 600;
+  line-height: 2rem;
+  letter-spacing: 0.2rem;
+  margin: 5%;}
+
+/*--Section envío NL-- */
+.section-NL{
+  background-image:radial-gradient(rgb(18, 14, 37), rgba(29, 37, 80, 0.8)), url("../images/newsletter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;}
+
+/*--Texto section NL-- */
+.nl-article{
+  margin: 10% 10% 5% 10%}
+
+.nl-title{
+  color: $texto-blanco;
+  @include text-center;
+  font-weight:bold;
+  font-size: map-get($font-size, "big" )}    
+
+.nl-text{
+  color: $texto-blanco;
+  @include text-center;
+  font-weight:500;
+  font-size: map-get($font-size, "medium")}
 
 /*--botón envío mail- */
 
-  .form-nl{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;}
+.form-nl{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;}
 
-  .form-control{
-      max-width: 50%;}
+.form-control{
+  max-width: 300px;}
 
-  .btn-color{
-      background-color: nth($bg-color, 2);
-      color: $texto-blanco }
+.btn-color{
+  background-color: nth($bg-color, 2);
+  color: $texto-blanco;}
+
