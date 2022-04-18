@@ -31,9 +31,9 @@
     @extend %column;
     @include text-justify;
     color: $texto-color;
-    padding: 4%;
+    padding: 5%;
     box-shadow: 10px 10px 10px 10px nth($bg-color, 4);
-    height: 400px;
+    height: 100%;
     margin: 5%;
     .service-icon{
       font-size: map-get($font-size, "bigger");

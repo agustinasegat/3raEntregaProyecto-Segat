@@ -365,9 +365,9 @@
   letter-spacing: 1px;
   line-height: 2rem;
   color: #154776;
-  padding: 4%;
+  padding: 5%;
   box-shadow: 10px 10px 10px 10px #F2F2F2;
-  height: 400px;
+  height: 100%;
   margin: 5%;
 }
 .main-servicios .service-box .service-icon {
