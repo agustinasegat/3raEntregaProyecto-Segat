@@ -1,10 +1,13 @@
 /* --NOTICIAS-- */
 
+.main-noticia{
+margin: 5%}
+
 /* --Texto arriba-- */
 .top-text{   
     margin: 5%;
     color: nth($bg-color, 2);
-    font-size: map-get($font-size, "big");
+    font-size: map-get($font-size, "medium");
     @extend %typo; 
     margin: 5%}
 
