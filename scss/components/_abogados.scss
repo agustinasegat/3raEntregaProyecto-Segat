@@ -20,37 +20,37 @@
     margin:5%}
 
 .staff-title{
-    @include text-center;
     color: $texto-color;
     font-size: map-get($font-size, "big");
     font-weight: bold;
-    margin-bottom: 2%}
-    
+    margin-bottom: 5%;}
+
 .staff-text{
-    margin-top: 5%;
+    margin: 5% 0 5% 0;
     @include text-justify;
     color: $texto-color;
-    font-size: map-get($font-size, "medium");}
+    font-size: map-get($font-size, "medium")}
 
 /* --Envío CV-- */
-.mail-title{
-    color: $texto-blanco;
-    @include text-center;
-    font-weight:bold;
-    font-size: map-get($font-size, "big" )}    
-
-.mail-text{
-    color: $texto-blanco;
-    @include text-center;
-    font-weight:500;
-    font-size: map-get($font-size, "medium" )}
-
 .section-CV{
     background-image:radial-gradient(rgb(18, 14, 37), rgba(29, 37, 80, 0.8)), url("../images/bg.jpg");
     background-size: cover;
     background-attachment: fixed;
-    margin-bottom: 5%;}
-    
+    margin-bottom: 5%;
+    padding: 3%;
+    .mail-title{
+        color: $texto-blanco;
+        @include text-center;
+        font-weight:bold;
+        font-size: map-get($font-size, "big" );
+        margin-bottom: 3%}
+        .mail-text{
+            color: $texto-blanco;
+            @include text-center;
+            font-weight:500;
+            font-size: map-get($font-size, "medium" )}}
+
+/* --Formulario envío CV-- */
 .form-CV{
     display: flex;
     justify-content: center;

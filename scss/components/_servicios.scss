@@ -28,20 +28,24 @@
 .main-servicios{
   margin: 5% 5% 10% 5%;
   .service-box{
+    margin: 5%;
     @extend %column;
     @include text-justify;
     color: $texto-color;
     padding: 5%;
-    box-shadow: 10px 10px 10px 10px nth($bg-color, 4);
     height: 100%;
-    margin: 5%;
-    .service-icon{
-      font-size: map-get($font-size, "bigger");
-      .service-title{
-        font-size: map-get($font-size, "big");
-        .service-text{
-          font-size: map-get($font-size, "medium");
-          margin: 5%;}}}}}
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      transform: scale(1.02)}}
+  
+.service-icon{
+  font-size: map-get($font-size, "bigger")}
+  
+.service-title{
+  font-size: map-get($font-size, "big");}
+        
+.service-text{
+  font-size: map-get($font-size, "medium");}
       
 /* --Servicios- Contáctenos-- */
 .service-contact{

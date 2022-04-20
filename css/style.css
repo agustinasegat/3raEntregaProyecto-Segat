@@ -1,6 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto+Serif:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto+Serif:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
 .top-text {
   font-weight: 700;
   letter-spacing: 0.3rem;
@@ -21,27 +20,25 @@
   align-items: center;
 }
 
+/* --FUENTE-- */
 /* --RESET-- */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* --FUENTE-- */
+/* --BODY-- */
 .container-body {
   font-family: "Poppins", sans-serif;
-  word-wrap: break-word;
 }
 
 /* --HEADER- */
 /* --navbar- */
-/* --Color del Nav--*/
 .nav-bg {
   background-color: #d1d1d1;
   box-shadow: 10px 2px 10px 10px #243242;
 }
 
-/*--Items Nav--*/
 .nav-link-mod {
   text-decoration: none;
   display: block;
@@ -49,24 +46,8 @@
   color: #154776;
   letter-spacing: 0.2rem;
   font-size: 16px;
-  text-decoration: none;
 }
 .nav-link-mod:hover {
-  background-color: #2E6FF2;
-  color: #F2F2F2;
-}
-
-/*--Logo--*/
-.navbar-brand-mod {
-  text-decoration: none;
-  display: block;
-  padding: 0.4rem 0.8rem;
-  color: #154776;
-  letter-spacing: 0.2rem;
-  font-size: 16px;
-  text-decoration: none;
-}
-.navbar-brand-mod:hover {
   background-color: #2E6FF2;
   color: #F2F2F2;
 }
@@ -76,28 +57,46 @@
   color: #2E6FF2;
 }
 
-/* --Head- */
-.border-blue {
-  border: 4px double #2E6FF2;
-  margin: 15%;
+/*--Logo--*/
+.navbar-brand-mod {
+  text-decoration: none;
+  display: block;
+  padding: 0.4rem 0.8rem;
+  color: #154776;
+  letter-spacing: 0.1rem;
+  font-size: 16px;
+  text-decoration: none;
+}
+.navbar-brand-mod:hover {
+  background-color: #2E6FF2;
+  color: #F2F2F2;
 }
 
-.head-title {
+/* -Texto en borde azul-- */
+.border-blue {
+  border: 4px double #2E6FF2;
+  padding: 3%;
+  margin: 10%;
+}
+.border-blue .head-title {
   color: #F2F2F2;
   text-align: center;
   line-height: 2rem;
   letter-spacing: 1px;
-  font-size: 36x;
-  margin-top: 5%;
+  font-weight: 500;
+  font-size: 36px;
+  letter-spacing: 0.1rem;
+  margin: 3% 0% 3% 0%;
+  word-wrap: break-word;
 }
-
-.head-text {
+.border-blue .head-text {
   color: #F2F2F2;
   text-align: center;
   line-height: 2rem;
   letter-spacing: 1px;
   font-size: 16px;
   margin: 5%;
+  word-wrap: break-word;
 }
 
 /* --INDEX-- */
@@ -114,18 +113,18 @@
 .hero-text {
   color: #F2F2F2;
   text-align: center;
+  line-height: 3rem;
+  letter-spacing: 0.2rem;
 }
 
 .hero-h {
   font-weight: 600;
-  letter-spacing: 0.2rem;
-  font-size: 36x;
+  font-size: 36px;
   margin-top: 20%;
 }
 
 .hero-text {
   font-weight: 400;
-  letter-spacing: 0.1rem;
   font-size: 26px;
 }
 
@@ -191,18 +190,18 @@
 
 /* --Formato Cajas-- */
 .box {
-  border: 2px solid #F2F2F2;
-  padding: 2%;
+  padding: 3%;
   margin: 3%;
-  border-radius: 10px;
+  border-radius: 30px;
+  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: inset 0 -3em 3em rgba(204, 201, 201, 0.1), 0 0 0 2px #bebebe, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
 /*--Iconos Cajas--*/
 .box-icons-flex {
-  margin: 3%;
+  margin: 2%;
 }
-
-.box-icon {
+.box-icons-flex .box-icon {
   color: #154776;
   font-size: 48px;
   margin-bottom: 10%;
@@ -216,6 +215,7 @@
   letter-spacing: 1px;
   color: #154776;
   font-size: 16px;
+  margin-bottom: 10%;
 }
 
 /* --Texto Qué nos diferencia-- */
@@ -227,20 +227,19 @@
   padding: 5%;
   margin-bottom: 10%;
 }
-
-.title-different {
+.section-different .title-different {
   color: #F2F2F2;
   text-align: justify;
   letter-spacing: 1px;
   line-height: 2rem;
   margin-bottom: 3%;
 }
-
-.text-different {
+.section-different .text-different {
   color: #F2F2F2;
   text-align: justify;
   letter-spacing: 1px;
   line-height: 2rem;
+  margin-bottom: 3%;
 }
 
 /* --ABOGADOS-- */
@@ -264,17 +263,14 @@
 }
 
 .staff-title {
-  text-align: center;
-  line-height: 2rem;
-  letter-spacing: 1px;
   color: #154776;
   font-size: 22px;
   font-weight: bold;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
 }
 
 .staff-text {
-  margin-top: 5%;
+  margin: 5% 0 5% 0;
   text-align: justify;
   letter-spacing: 1px;
   line-height: 2rem;
@@ -283,16 +279,23 @@
 }
 
 /* --Envío CV-- */
-.mail-title {
+.section-CV {
+  background-image: radial-gradient(#120e25, rgba(29, 37, 80, 0.8)), url("../images/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 5%;
+  padding: 3%;
+}
+.section-CV .mail-title {
   color: #F2F2F2;
   text-align: center;
   line-height: 2rem;
   letter-spacing: 1px;
   font-weight: bold;
   font-size: 22px;
+  margin-bottom: 3%;
 }
-
-.mail-text {
+.section-CV .mail-text {
   color: #F2F2F2;
   text-align: center;
   line-height: 2rem;
@@ -301,13 +304,7 @@
   font-size: 16px;
 }
 
-.section-CV {
-  background-image: radial-gradient(#120e25, rgba(29, 37, 80, 0.8)), url("../images/bg.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  margin-bottom: 5%;
-}
-
+/* --Formulario envío CV-- */
 .form-CV {
   display: flex;
   justify-content: center;
@@ -361,24 +358,28 @@
   margin: 5% 5% 10% 5%;
 }
 .main-servicios .service-box {
+  margin: 5%;
   text-align: justify;
   letter-spacing: 1px;
   line-height: 2rem;
   color: #154776;
   padding: 5%;
-  box-shadow: 10px 10px 10px 10px #F2F2F2;
   height: 100%;
-  margin: 5%;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transform: scale(1.02);
 }
-.main-servicios .service-box .service-icon {
+
+.service-icon {
   font-size: 26px;
 }
-.main-servicios .service-box .service-icon .service-title {
+
+.service-title {
   font-size: 22px;
 }
-.main-servicios .service-box .service-icon .service-title .service-text {
+
+.service-text {
   font-size: 16px;
-  margin: 5%;
 }
 
 /* --Servicios- Contáctenos-- */
@@ -428,7 +429,7 @@
 }
 
 .img-size {
-  max-height: 80%;
+  max-height: 70%;
   width: 100%;
 }
 
@@ -437,17 +438,15 @@
   box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   padding: 2%;
-  max-height: 100%;
+  height: 100%;
+}
+.card-style:hover {
+  box-shadow: 0 28px 36px 0 rgba(0, 0, 0, 0.2);
+  filter: grayscale(100%);
 }
 
 .card-link {
   text-decoration: none;
-}
-
-/* --Hover tarjeta de noticias--*/
-.card-style:hover {
-  box-shadow: 0 28px 36px 0 rgba(0, 0, 0, 0.2);
-  filter: grayscale(100%);
 }
 
 /* --Texto tarjeta de noticias--*/
@@ -461,7 +460,7 @@
 }
 
 .card-title {
-  font-size: 22px;
+  font-size: 16px;
   text-align: center;
   color: #154776;
   font-weight: 600;
@@ -475,13 +474,12 @@
   background-image: radial-gradient(#120e25, rgba(29, 37, 80, 0.8)), url("../images/newsletter.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-bottom: 10%;
+  padding: 5% 3% 3% 3%;
 }
 
 /*--Texto section NL-- */
-.nl-article {
-  margin: 10% 10% 5% 10%;
-}
-
 .nl-title {
   color: #F2F2F2;
   text-align: center;
@@ -521,12 +519,14 @@
 .top-text {
   margin: 5%;
   color: #2E6FF2;
+  font-size: 22px;
   margin: 5%;
 }
 
 /* --Título noticia-- */
 .news-title {
   color: #120e25;
+  font-size: 36px;
   text-align: center;
   line-height: 2rem;
   letter-spacing: 1px;
@@ -674,18 +674,25 @@
 
 /* --Botón atrás-- */
 .back-button {
-  font-size: 48px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
   margin-bottom: 10%;
+  font-size: 48px;
+  color: #2E6FF2;
+}
+.back-button:hover {
+  transform: scale(1.2);
+}
+
+.btn-back {
+  text-decoration: none;
 }
 
 /* --CONTACTO-- */
-.container-body-contact {
+.bg-contact {
   background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/email-pattern.png");
   background-attachment: fixed;
-  font-family: "Poppins", sans-serif;
 }
 
 .main-contacto {
@@ -702,15 +709,8 @@
   font-weight: bold;
 }
 
-.form-h1 {
-  color: #154776;
-  font-size: 22px;
-  text-align: center;
-}
-
 input, textarea {
-  border: 0;
-  outline: 0;
+  border-color: #F2F2F2;
   padding: 1rem;
   display: block;
   width: 100%;
@@ -718,23 +718,34 @@ input, textarea {
   resize: none;
   border-radius: 15px;
 }
+input:hover, textarea:hover {
+  border-color: #2E6FF2;
+}
 
 textarea {
   height: 200px;
 }
 
+/* --botón-- */
 .contact-button {
-  font-size: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 38px;
+  border-radius: 16px;
+  border: 1px solid transparent;
   color: #F2F2F2;
-  letter-spacing: 0.2rem;
-  border-radius: 15px;
   background-color: #2E6FF2;
-  max-width: auto;
-  cursor: pointer;
+  font-size: 22px;
+  letter-spacing: 0.2rem;
+  transition: all 0.15s linear;
 }
 .contact-button:hover {
-  background-color: #d1d1d1;
-  transform: scale(1.05);
+  background-color: rgba(29, 201, 160, 0.08);
+  border-color: #2E6FF2;
+  color: #2E6FF2;
+  transform: translateY(-5px) scale(1.03);
 }
 
 /* --FOOTER-- */
@@ -752,9 +763,14 @@ textarea {
   color: #2E6FF2;
 }
 
+.iframe-map {
+  width: 80%;
+  height: 80%;
+}
+
 .copy {
   text-align: center;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */

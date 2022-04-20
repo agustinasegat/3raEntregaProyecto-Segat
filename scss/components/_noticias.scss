@@ -4,15 +4,14 @@
 .top-text{   
     margin: 5%;
     color: nth($bg-color, 2);
-    font-size: map-get($font-size, "Big");
+    font-size: map-get($font-size, "big");
     @extend %typo; 
     margin: 5%}
-
 
 /* --Título noticia-- */
 .news-title{
     color: nth($bg-color , 5);
-    font-size: map-get($font-size, "Bigger");
+    font-size: map-get($font-size, "plus");
     @include text-center;
     font-weight: 1000;
     line-height: 3rem;
@@ -37,7 +36,7 @@
     position: relative;
     padding: 16px 32px;
     font-weight: 500;
-    font-size: 16px;
+    font-size: map-get($font-size, "medium");
     line-height: 1;
     color: $texto-blanco;
     background: none;
@@ -134,8 +133,14 @@
  
 /* --Botón atrás-- */  
 .back-button {
-    font-size: 48px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
-    margin-bottom: 10%;}
+    margin-bottom: 10%;
+    font-size: 48px;
+    color: nth($bg-color, 2);
+    &:hover{
+        transform: scale(1.2);}}
+
+.btn-back{
+    text-decoration: none;}
