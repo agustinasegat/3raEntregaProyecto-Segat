@@ -6,7 +6,6 @@
     background-image: linear-gradient((rgba(29, 37, 80, 0.8)),rgb(18, 14, 37)), url("../images/equipo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     height: 40rem;}
 
 /* --Imágenes y textos de abogados-- */
@@ -36,7 +35,7 @@
     background-image:radial-gradient(rgb(18, 14, 37), rgba(29, 37, 80, 0.8)), url("../images/bg.jpg");
     background-size: cover;
     background-attachment: fixed;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     padding: 5%;
     .mail-title{
         color: $texto-blanco;

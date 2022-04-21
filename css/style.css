@@ -105,8 +105,7 @@
   background-image: linear-gradient(rgba(29, 37, 80, 0.8), #120e25), url("../images/ciudad.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  height: 50rem;
+  height: 40rem;
 }
 
 /* --Texto Header--*/
@@ -120,7 +119,7 @@
 .hero-h {
   font-weight: 600;
   font-size: 36px;
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 .hero-text {
@@ -135,7 +134,7 @@
 
 /* --Texto El Estudio y texto Global--*/
 .estudio {
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 
 .main-title {
@@ -172,7 +171,7 @@
   bottom: -20px;
 }
 
-/* --Section-Cajas-- */
+/* --Cajas-- */
 .section-boxes {
   margin: 10% 0 10% 0;
 }
@@ -194,7 +193,7 @@
   margin: 3%;
   border-radius: 30px;
   transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: inset 0 -3em 3em rgba(204, 201, 201, 0.1), 0 0 0 2px #bebebe, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
 }
 
 /*--Iconos Cajas--*/
@@ -202,9 +201,9 @@
   margin: 2%;
 }
 .box-icons-flex .box-icon {
-  color: #154776;
+  color: #2E6FF2;
   font-size: 48px;
-  margin-bottom: 10%;
+  margin: 10%;
   text-align: center;
 }
 
@@ -215,10 +214,10 @@
   letter-spacing: 1px;
   color: #154776;
   font-size: 16px;
-  margin-bottom: 10%;
+  margin-bottom: 20%;
 }
 
-/* --Texto Qué nos diferencia-- */
+/* --Qué nos diferencia-- */
 .section-different {
   background-image: linear-gradient(rgba(29, 37, 80, 0.8), #120e25), url("../images/novedades.jpg");
   background-repeat: no-repeat;
@@ -232,14 +231,19 @@
   text-align: justify;
   letter-spacing: 1px;
   line-height: 2rem;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
   margin-bottom: 3%;
 }
 .section-different .text-different {
   color: #F2F2F2;
+  font-size: 16px;
+  letter-spacing: 0.1rem;
   text-align: justify;
   letter-spacing: 1px;
   line-height: 2rem;
-  margin-bottom: 3%;
+  margin-bottom: 2%;
 }
 
 /* --ABOGADOS-- */
@@ -249,7 +253,6 @@
   background-image: linear-gradient(rgba(29, 37, 80, 0.8), #120e25), url("../images/equipo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   height: 40rem;
 }
 
@@ -283,7 +286,7 @@
   background-image: radial-gradient(#120e25, rgba(29, 37, 80, 0.8)), url("../images/bg.jpg");
   background-size: cover;
   background-attachment: fixed;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   padding: 5%;
 }
 .section-CV .mail-title {
@@ -359,10 +362,9 @@
 }
 .main-servicios .service-box {
   margin: 5%;
-  text-align: justify;
-  letter-spacing: 1px;
+  text-align: center;
   line-height: 2rem;
-  color: #154776;
+  letter-spacing: 1px;
   padding: 5%;
   height: 100%;
   border-radius: 50px;
@@ -371,15 +373,20 @@
 }
 
 .service-icon {
-  font-size: 26px;
+  font-size: 36px;
+  color: #2E6FF2;
+  margin-bottom: 10%;
 }
 
 .service-title {
   font-size: 22px;
+  color: #154776;
+  font-weight: 600;
 }
 
 .service-text {
   font-size: 16px;
+  color: #154776;
 }
 
 /* --Servicios- Contáctenos-- */
@@ -387,7 +394,6 @@
   background-image: linear-gradient(rgba(29, 37, 80, 0.8), #120e25), url("../images/contacto.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   padding: 8%;
   margin-bottom: 5%;
 }
@@ -395,6 +401,7 @@
   margin: 2%;
 }
 .service-contact .service-contact-container .service-contact-text {
+  margin-bottom: 3%;
   color: #F2F2F2;
   text-align: center;
   line-height: 2rem;
@@ -419,7 +426,6 @@
   background-image: linear-gradient(rgba(29, 37, 80, 0.8), #120e25), url("../images/libros.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   height: 40rem;
 }
 
@@ -479,7 +485,7 @@
   padding: 5% 3% 3% 3%;
 }
 
-/*--Texto section NL-- */
+/*--Newsletter-- */
 .nl-title {
   color: #F2F2F2;
   text-align: center;
@@ -706,14 +712,15 @@
 /* --Formulario- */
 .contact-text {
   color: #154776;
-  font-size: 26px;
+  font-size: 22px;
   text-align: center;
   line-height: 2rem;
   letter-spacing: 1px;
   font-weight: bold;
+  word-wrap: break-word;
 }
 
-input, textarea {
+input {
   border-color: #F2F2F2;
   padding: 1rem;
   display: block;
@@ -722,12 +729,22 @@ input, textarea {
   resize: none;
   border-radius: 15px;
 }
-input:hover, textarea:hover {
+input:hover {
   border-color: #2E6FF2;
 }
 
 textarea {
   height: 200px;
+  border-color: #F2F2F2;
+  padding: 1rem;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  resize: none;
+  border-radius: 15px;
+}
+textarea:hover {
+  border-color: #2E6FF2;
 }
 
 /* --botón-- */
@@ -765,6 +782,13 @@ textarea {
 }
 .text-link:hover {
   color: #2E6FF2;
+}
+
+.footer-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.1rem;
 }
 
 .iframe-map {

@@ -2,8 +2,7 @@
 
 .bg-contact{
     background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/email-pattern.png");
-    background-attachment: fixed;
-    }
+    background-attachment: fixed;}
 
 .main-contacto{
     margin: 5%;}
@@ -11,11 +10,12 @@
 /* --Formulario- */
 .contact-text{
     color: $texto-color;
-    font-size: map-get($font-size, "bigger");
+    font-size: map-get($font-size, "big");
     @include text-center;
-    font-weight: bold;}
+    font-weight: bold;
+    word-wrap: break-word;}
 
-input,textarea {
+input{
     border-color: nth($bg-color, 4);
     padding: 1rem;
     display: block;
@@ -27,7 +27,16 @@ input,textarea {
         border-color: nth($bg-color, 2);}}
 
 textarea {
-     height: 200px;}
+     height: 200px;
+     border-color: nth($bg-color, 4);
+     padding: 1rem;
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+     resize: none;
+     border-radius: 15px;
+     &:hover{
+         border-color: nth($bg-color, 2);}}
 
 
 /* --botón-- */

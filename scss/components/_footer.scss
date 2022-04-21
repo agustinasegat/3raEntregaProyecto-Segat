@@ -11,10 +11,15 @@
   &:hover{
     color: nth($bg-color, 2);}}
 
+.footer-title{
+  font-size: map-get($font-size, "medium");
+  font-weight:700;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.1rem;}
+
 .iframe-map{
   width: 80%;
-  height: 80%;
-}
+  height: 80%;}
   
 .copy{
   text-align: center;

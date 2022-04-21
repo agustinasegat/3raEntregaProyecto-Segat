@@ -30,8 +30,7 @@
   .service-box{
     margin: 5%;
     @extend %column;
-    @include text-justify;
-    color: $texto-color;
+    @include text-center;
     padding: 5%;
     height: 100%;
     border-radius: 50px;
@@ -39,26 +38,31 @@
       transform: scale(1.02)}}
   
 .service-icon{
-  font-size: map-get($font-size, "bigger")}
+  font-size: map-get($font-size, "biggest");
+  color: nth($bg-color, 2);
+  margin-bottom: 10%;}
   
 .service-title{
-  font-size: map-get($font-size, "big");}
+  font-size: map-get($font-size, "big");
+  color: $texto-color;
+  font-weight: 600;}
         
 .service-text{
-  font-size: map-get($font-size, "medium");}
+  font-size: map-get($font-size, "medium");
+  color: $texto-color}
       
 /* --Servicios- Contáctenos-- */
 .service-contact{
   background-image: linear-gradient((rgba(29, 37, 80, 0.8)),rgb(18, 14, 37)), url("../images/contacto.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   padding: 8%;
   margin-bottom: 5%;
   .service-contact-container{
     @extend %column;
     margin: 2%;
    .service-contact-text{
+     margin-bottom: 3%;
      color:$texto-blanco;
      @include text-center;
      font-size: map-get($font-size, "big");}}}

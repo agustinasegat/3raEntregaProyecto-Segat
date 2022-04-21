@@ -5,8 +5,7 @@
   background-image: linear-gradient((rgba(29, 37, 80, 0.8)),rgb(18, 14, 37)), url("../images/ciudad.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  height: 50rem;}
+  height: 40rem;}
 
 /* --Texto Header--*/
 .hero-text{
@@ -18,7 +17,7 @@
 .hero-h{
   font-weight: 600;
   font-size: map-get($font-size, "plus");
-  margin-top: 20%;}
+  margin-top: 15%;}
 
 .hero-text{
   font-weight: 400;
@@ -30,7 +29,7 @@
 
 /* --Texto El Estudio y texto Global--*/
 .estudio {
-  margin-bottom: 5%}
+  margin-bottom: 10%}
 
 .main-title{
   color: $texto-color;
@@ -57,7 +56,7 @@
 .line::before{
   bottom: -20px;}  
   
-/* --Section-Cajas-- */
+/* --Cajas-- */
 .section-boxes{
   margin: 10% 0 10% 0}
 
@@ -77,16 +76,16 @@
   margin: 3%;
   border-radius: 30px;
   transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: inset 0 -3em 3em rgba(204, 201, 201, 0.1),0 0  0 2px rgb(190, 190, 190),0.3em 0.3em 1em rgba(0,0,0,0.3);}
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;}
 
 /*--Iconos Cajas--*/
 .box-icons-flex{
   @extend %column;
   margin: 2%;
   .box-icon{
-    color: $texto-color;
+    color: nth($bg-color, 2);
     font-size: 48px;
-    margin-bottom: 10%;
+    margin: 10%;
     text-align: center}}
 
 /*--Texto Cajas--*/
@@ -94,9 +93,9 @@
   @include text-center;
   color: $texto-color;
   font-size: map-get($font-size, "medium");
-  margin-bottom: 10%}
+  margin-bottom: 20%}
 
-/* --Texto Qué nos diferencia-- */
+/* --Qué nos diferencia-- */
 .section-different{
   background-image: linear-gradient((rgba(29, 37, 80, 0.8)),rgb(18, 14, 37)), url("../images/novedades.jpg");
   background-repeat: no-repeat;
@@ -107,8 +106,13 @@
   .title-different{
     color: $texto-blanco;
     @include text-justify;
+    font-size: map-get($font-size, "big" );
+    font-weight: 600;
+    letter-spacing: 0.1rem;
     margin-bottom: 3%;}
   .text-different{
     color: $texto-blanco;
+    font-size: map-get($font-size, "medium");
+    letter-spacing: 0.1rem;
     @include text-justify;
-    margin-bottom: 3% }}
+    margin-bottom: 2%;}}
