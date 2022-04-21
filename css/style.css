@@ -626,6 +626,7 @@
 
 .share-btn ul li {
   flex: 1;
+  margin: 10%;
 }
 
 .share-btn ul li a {
